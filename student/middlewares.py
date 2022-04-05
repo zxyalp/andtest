@@ -11,7 +11,6 @@ from django.utils.deprecation import MiddlewareMixin
 
 class TimeItMiddleware(MiddlewareMixin):
 
-
     def process_request(self, request):
         self.start_time = time.time()
         return
